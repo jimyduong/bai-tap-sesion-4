@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>translate</title>
+</head>
+<body>
+<input type="text" id="nhap">
+<button onclick="dich()">Translate</button>
+<input id="hienthi">
+<p id="hienthi1"></p>
+<script>
+    function dich() {
+        let nhap = document.getElementById("nhap").value;
+        let en = ["hello", "bye"];
+        let vi = ["xin chao", "tam biet"];
+        let a=true;
+        for (let i = 0; i < en.length; i++) {
+            if (nhap === en[i]) {
+                document.getElementById("hienthi").value = vi[i];
+                document.getElementById("hienthi1").innerHTML = "";
+                a=false;
+            }
+        }
+        if (a){
+            document.getElementById("hienthi1").innerHTML = "khong co trong tu dien ";
+            document.getElementById("hienthi").value = "";
+        }
+    }
+</script>
+</body>
+</html>
