@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p id="hienthi"></p>
+<p id="hienthi1"></p>
+<p id="hienthi3"></p>
+<p id="hienthi2"></p>
+<script>
+let A=[1,2,3,4,5,6,7,8,9];
+let max=0;
+let dem=0;
+let tong=0;
+for(let i=0;i<A.length;i++){
+    dem++;
+    tong+=A[i]
+    if (A[i]>max){
+        max=A[i];
+    }
+}
+TBC=tong/dem;
+document.getElementById("hienthi").innerHTML="mang: "+ A;
+document.getElementById("hienthi1").innerHTML="so lon nhat la: "+max;
+document.getElementById("hienthi3").innerHTML="so phan tu trong la: "+dem;
+document.getElementById("hienthi2").innerHTML="Tong trung binh la: "+ TBC;
+
+</script>
+</body>
+</html>

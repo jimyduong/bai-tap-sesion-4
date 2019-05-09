@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p id="hienthi"></p>
+<p id="hienthi1"></p>
+<script>
+    let A=[1,12,-3,45,-5,-8,111];
+    let dem=0
+    for (let i=0;i<A.length;i++){
+        if(A[i]<0){
+            dem++;
+        }
+    }
+    document.getElementById("hienthi").innerHTML="mang: " +A;
+    document.getElementById("hienthi1").innerHTML="cac so nguyen am trong mang la: " +dem;
+</script>
+</body>
+</html>

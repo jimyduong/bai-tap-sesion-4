@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<b id="hienthi1"></b>
+<br>
+<br>
+cac so lon hon 10 la:
+<p id="hienthi"></p>
+<p id="hienthi2"></p>
+
+<body>
+<script>
+    let A=[1,2,33,11,23,5,123,12];
+    dem=0;
+    let B=[];
+    document.getElementById("hienthi1").innerHTML="Mang: "+ A
+    for(let i=0;i<A.length;i++){
+        if(A[i]>10){
+            B.push(A[i]);
+            dem++;
+        }
+    }
+    document.getElementById("hienthi").innerHTML=B.join("-");
+    document.getElementById("hienthi2").innerHTML="so cac so >10 la: "+dem;
+</script>
+</body>
+</html>

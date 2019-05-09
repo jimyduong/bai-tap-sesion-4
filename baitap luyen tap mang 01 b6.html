@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+Nhap 5 so:<br>
+<input type="number" id="nhap">
+<button onclick="nhap()">nhap</button>
+<p id="hienthi"></p>
+Nhap so can tim:<br>
+<input type="number" id="tim">
+<button onclick="tim()">Tim</button>
+<p id="hienthi1"></p>
+
+<script>
+    let A=[];
+    function nhap() {
+        let a = document.getElementById("nhap").value;
+        if(A.length<5){
+            A.push(a);
+            document.getElementById("nhap").value ="";
+        }
+        document.getElementById("hienthi").innerHTML="cac phan tu trong mang la: " +A;
+    }
+    function tim() {
+        let b =document.getElementById("tim").value;
+        for(let i=0;i<A.length;i++){
+            if(b==A[i]){
+                document.getElementById("hienthi1").innerHTML="so "+b+ " co trong mang";
+                break;
+            }else
+            {
+                document.getElementById("hienthi1").innerHTML="so "+b+ " khong co trong mang";
+            }
+        }
+
+    }
+</script>
+</body>
+</html>

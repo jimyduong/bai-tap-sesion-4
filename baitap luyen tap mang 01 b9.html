@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="number" id="nhap1">
+<button onclick="nhap1()">nhap mang 1</button>
+<p id="hienthi1"></p>
+<input type="number" id="nhap2">
+<button onclick="nhap2()">nhap mang 2</button>
+<p id="hienthi2"></p>
+<br>
+<button onclick="ghep()">Ghep mang</button>
+<p id="hienthi3"></p>
+<script>
+    let A=[];
+    let B=[];
+    let C=[];
+    function nhap1() {
+        let a=document.getElementById("nhap1").value;
+        if (A.length<5){
+            A.push(a);
+            document.getElementById("nhap1").value = "";
+        }
+        document.getElementById("hienthi1").innerHTML = A;
+
+    }function nhap2() {
+        let b=document.getElementById("nhap2").value;
+        if (B.length<5){
+            B.push(b);
+            document.getElementById("nhap2").value = "";
+        }
+        document.getElementById("hienthi2").innerHTML = B;
+    }
+    function ghep(){
+        C=A.concat(B);
+        document.getElementById("hienthi3").innerHTML = C;
+    }
+
+</script>
+</body>
+</html>
